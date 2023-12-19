@@ -1,0 +1,27 @@
+<header id="start_page">
+    <div class="container">
+        <div>
+            <div>
+                <div class="headline">
+                    <div class="headline-content">
+                        <h1 class="headline-title display-3">A typing speed tester app</h1>
+                        <p class="headline-subtitle">Enter yourname and press start...</p>
+                        <br>
+                        <form action='.' method='POST' id="friend_form"> {% csrf_token %}
+                            {% load static %}
+                            <input type='text' name='name' id="namebox" class="rounded-pill blackborder leftpadding"
+                                placeholder='Enter Your Name' /><br><br>
+                            <button type="submit" class="btn btn-primary rounded-pill" id="start_test_tg">
+                                Start
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</header>
+
+{% include 'App/site_speedtest.html' %}
+
+{% include 'App/site_speedtest_result.html' %}

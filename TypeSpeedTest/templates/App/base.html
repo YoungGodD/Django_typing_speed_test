@@ -1,0 +1,39 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Typenspeed - test your typing speed">
+  <meta name="description" content="A Django based web app for testing your typing speed.">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/normalize.min.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+
+  {% block head %}
+  {% endblock head %}
+
+</head>
+
+<body>
+  {% include 'App/site_nav.html' %}
+
+  {% block body %}
+
+  {% endblock body %}
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  {% block homescripts %}
+  {% endblock homescripts %}
+</body>
+
+</html>

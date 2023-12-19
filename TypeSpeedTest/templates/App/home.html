@@ -1,0 +1,19 @@
+{% extends 'App/base.html' %}
+
+{% block head %} <title>Home || Typenspeed</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/speedtest.css' %}" rel="stylesheet">
+
+{% endblock head %}
+
+
+{% block body %}
+
+{% include 'App/site_home.html' %}
+
+{% endblock body %}
+
+{% block homescripts %}
+<script src="{% static 'js/testspeed.js' %}"></script>
+<script src="{% static 'js/toggles.js' %}"></script>
+{% endblock homescripts %}

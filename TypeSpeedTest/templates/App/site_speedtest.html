@@ -1,0 +1,30 @@
+<header id="start_speedtest" style="display: none;">
+    <div class="container" style="padding-top: 120px;">
+      <div>
+        <div>
+          <link href='https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto:400,900,700' rel='stylesheet'
+            type='text/css' />
+          <h1 id="output"></h1>
+          <div class="target mono" id="target"></div>
+          <div id="your-attempt" class="mono your-attempt" placeholder="Your text will appear here"></div>
+          <div class="results">
+            <ul class="stats">
+              <li>Words per minute <span id="wpm">0</span></li>
+              <li>Wordcount <span id="wordcount">0</span></li>
+              <li>Timer <span id="timer">0</span></li>
+              <li>Errors <span id="errors">0</span></li>
+            </ul>
+          </div>
+          <hr style="clear:both;" />
+          <div>
+            <textarea name="" id="input_text" cols="30"
+              rows="10">{{ text }}</textarea>
+            <button type="button" class="btn btn-secondary rounded-pill" id="reset">
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
